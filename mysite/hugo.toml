@@ -41,3 +41,8 @@ author = "Karteek"
 
 [params.social]
 linkedin = "https://www.linkedin.com/in/karteekgole"
+
+[taxonomies]
+tags = "tags"
+categories = "categories"
+technologies = "technologies"

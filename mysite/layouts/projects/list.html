@@ -1,0 +1,34 @@
+{{ define "main" }}
+<section>
+    <header>
+      <h1>{{ .Title }}</h1>
+      <p class="meta">You can also filter by <a href="{{ "technologies" | relURL }}" class="button">technologies</a> or <a href="{{ "projects/archive" | relURL }}" class="button">years</a></p>
+    </header>
+
+    {{ with .Content }}
+        {{- . -}}
+    {{ end }}
+
+    {{ range .Paginator.Pages }}
+    <section class="projects">
+      <time datetime="{{ .Date.Format "2006-01-02" }}" class="meta">{{ .Date.Format "2006-01-02" }}</time>
+      <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+
+      {{ if .Params.technologies }}
+      <p class="tags">
+        {{ range $i, $tech := .Params.technologies }}
+          {{ if gt $i 0 }}, {{ end }}<a href="{{ (printf "technologies/%s/" (urlize $tech)) | relURL }}">{{ $tech }}</a>
+        {{ end }}
+      </p>
+      {{ end }}
+
+      {{ if .Description }}
+      <p>{{ .Description }}</p>
+      {{ end }}
+    </section>
+    {{ end }}
+
+    {{ partial "pagination.html" . }}
+
+</section>
+{{ end }}

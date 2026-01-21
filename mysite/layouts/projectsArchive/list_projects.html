@@ -1,0 +1,9 @@
+{{ define "main" }}
+<section>
+  <header>
+    <h1>{{ .Title }}</h1>
+  </header>
+  <p>This archive page has moved to <a href="{{ "projects/archive" | relURL }}">/projects/archive/</a>.</p>
+  <meta http-equiv="refresh" content="0; url={{ "projects/archive" | relURL }}">
+</section>
+{{ end }}

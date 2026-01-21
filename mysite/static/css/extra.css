@@ -1,0 +1,66 @@
+/* Small UI tweaks: hover highlight and right-aligned date for Projects list
+   Keeps retro, high-contrast aesthetic but subtle. */
+
+/* Make each project block easier to scan */
+.projects {
+  position: relative;
+  padding: 18px 20px;
+  margin-bottom: 18px;
+  border-radius: 4px;
+  /* No background or shadow for crisp System 7 look */
+  background: none;
+  box-shadow: none;
+  transition: none;
+}
+.projects:hover { /* no card-wide visual changes; keep hover simple */ }
+
+/* Date floated to the right */
+.projects .meta {
+  position: absolute;
+  right: 18px;
+  top: 18px;
+  font-size: 0.9rem;
+  opacity: 0.9;
+  color: var(--pico-muted-color, rgba(0,0,0,0.6));
+}
+
+/* Make title and tags more readable */
+.projects h3 { margin: 6px 0 8px 0; }
+.projects .tags { margin: 6px 0 0 0; font-size: 0.95rem; }
+.projects .tags a { text-decoration: underline; color: inherit; }
+
+/* Individual element hover highlights (title + tags) */
+.projects h3 a {
+  color: var(--pico-color, inherit);
+  transition: color 120ms ease, text-shadow 120ms ease, background 120ms ease;
+  padding: 0 1px;
+  border-radius: 2px;
+  text-decoration: none;
+}
+.projects h3 a:hover,
+.projects h3 a:focus {
+  color: var(--pico-primary, inherit);
+  background: transparent;
+  text-decoration: underline;
+}
+.projects .tags a {
+  color: var(--pico-muted-color, inherit);
+  transition: color 120ms ease, background 120ms ease;
+  padding: 0 4px;
+  border-radius: 2px;
+  text-decoration: none;
+}
+.projects .tags a:hover,
+.projects .tags a:focus {
+  color: var(--pico-primary, inherit);
+  background: transparent;
+  text-decoration: underline;
+}
+
+/* Slight retro border under the list */
+section.projects + hr, .projects + .projects { border-top: 1px solid var(--pico-muted-border-color, rgba(0,0,0,0.06)); }
+
+/* Ensure the hover effect looks good on dark background */
+@media (prefers-reduced-motion: reduce) {
+  .projects { transition: none; }
+}
