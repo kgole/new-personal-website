@@ -5,7 +5,7 @@
     <nav aria-label="All posts">
       <a href="{{ .Section | relURL }}">&larr; Back to All Posts</a>
     </nav>
-  {{ else if ne .RelPermalink "/contact/" }}
+  {{ else if ne .File.BaseFileName "contact" }}
     <nav aria-label="All posts">
       <a href="{{ "/" | relURL }}">&larr; Back to Home Page</a>
     </nav>
