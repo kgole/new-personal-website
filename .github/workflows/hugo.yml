@@ -73,6 +73,14 @@ jobs:
             echo "No package.json/lockfile in theme; skipping"
           fi
 
+      - name: Debug: list theme scss and check sass
+        working-directory: mysite
+        run: |
+          echo "Listing theme scss files"
+          ls -la themes/chicago7/assets/scss || true
+          echo "Check sass-embedded binary"
+          which sass-embedded || sass-embedded --version || true
+
       - name: Build with Hugo
         working-directory: mysite
         env:
