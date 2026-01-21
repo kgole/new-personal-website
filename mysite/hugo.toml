@@ -1,4 +1,4 @@
-baseURL = 'https://kgole.github.io/'
+baseURL = 'https://kgole.github.io/new-personal-website/'
 languageCode = 'en-us'
 title = "Karteek's Website"
 theme = 'chicago7'
