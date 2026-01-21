@@ -73,7 +73,7 @@ jobs:
             echo "No package.json/lockfile in theme; skipping"
           fi
 
-      - name: Debug: list theme scss and check sass
+      - name: "Debug: list theme scss and check sass"
         working-directory: mysite
         run: |
           echo "Listing theme scss files"
