@@ -1,0 +1,45 @@
+{{ define "main" }}
+<article>
+  {{/* Back-link: keep for posts, omit on the contact page, otherwise link home */}}
+  {{ if eq .Section "posts" }}
+    <nav aria-label="All posts">
+      <a href="{{ .Section | relURL }}">&larr; Back to All Posts</a>
+    </nav>
+  {{ else if ne .RelPermalink "/contact/" }}
+    <nav aria-label="All posts">
+      <a href="{{ "/" | relURL }}">&larr; Back to Home Page</a>
+    </nav>
+  {{ end }}
+  <header>
+    <h1>{{ .Title }}</h1>
+    {{ with .PublishDate }}
+      <time datetime="{{ .Format "2006-01-02" }}">{{ .Format "January 02, 2006" }}</time>
+    {{ end }}
+    {{ if .Params.tags }}
+     <nav>
+          <ul>
+          {{ range .Params.tags }}
+          <li>
+            <a href="{{ (urlize (printf "tags/%s/" . )) | absLangURL }}" class="button">
+            {{- . -}}
+            </a>
+          </li>
+          {{ end }}
+          </ul>
+     </nav>
+    {{ end }}
+  </header>
+
+{{- /* Table of contents */ -}}
+{{ if or .Params.Toc $.Site.Params.Toc }}
+ {{ if ne .Params.Toc false }}
+<nav aria-label="Table of Contents">
+   {{ .TableOfContents }}
+</nav>
+ {{ end }}
+{{ end }}
+
+{{- /* Content */ -}}
+{{ .Content }}
+</article>
+{{ end }}
