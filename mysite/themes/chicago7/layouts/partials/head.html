@@ -33,7 +33,11 @@
 <!-- Site overrides -->
 <link rel="stylesheet" href="{{ "css/extra.css" | relURL }}">
 <!-- Icons -->
-<link rel="shortcut icon" href="{{ .Site.Params.Favicon | default "favicon.svg" | relURL }}" >
+{{ $faviconLight := .Site.Params.faviconLight | default (.Site.Params.Favicon | default "favicon-light.png") }}
+{{ $faviconDark := .Site.Params.faviconDark | default "favicon-dark.png" }}
+<link rel="icon" type="image/png" href="{{ $faviconLight | relURL }}" media="(prefers-color-scheme: light)">
+<link rel="icon" type="image/png" href="{{ $faviconDark | relURL }}" media="(prefers-color-scheme: dark)">
+<link rel="shortcut icon" href="{{ $faviconLight | relURL }}" >
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary" />
 {{ if (isset $.Site.Params "twitter") }}

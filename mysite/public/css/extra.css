@@ -64,3 +64,22 @@ section.projects + hr, .projects + .projects { border-top: 1px solid var(--pico-
 @media (prefers-reduced-motion: reduce) {
   .projects { transition: none; }
 }
+
+/* Logo light/dark swap (System 7 pixel art friendly) */
+.site-logo {
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+.logo-dark { display: none; }
+
+/* Respect OS/browser setting when no explicit theme override is set */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .logo-light { display: none; }
+  :root:not([data-theme="light"]) .logo-dark { display: inline; }
+}
+
+/* Respect explicit overrides if you ever set data-theme */
+[data-theme="dark"] .logo-light { display: none; }
+[data-theme="dark"] .logo-dark { display: inline; }
+[data-theme="light"] .logo-light { display: inline; }
+[data-theme="light"] .logo-dark { display: none; }

@@ -32,8 +32,11 @@ url = "/"
 weight = 10
 
 [params]
-# Optional. The relative path to the site logo file within the `assets/` folder
-logo = "logo2x.png"
+logoLight = "logo-light.png"
+logoDark = "logo-dark.png"
+
+faviconLight = "favicon-light.png"
+faviconDark = "favicon-dark.png"
 
 
 # Web site author for copyrighting
