@@ -1,3 +1,81 @@
+/* Contact form layout */
+.contact-form {
+  display: grid;
+  gap: 0.7em;
+  max-width: 480px;
+  width: 100%;
+  margin: 2em 0 2em 0;
+  padding: 1em 1.5em;
+  border-radius: 6px;
+  background: none;
+  font-family: inherit;
+  box-sizing: border-box;
+  justify-items: start;
+}
+.contact-form .form-row {
+  display: flex;
+  gap: 0.7em;
+  width: 100%;
+}
+.contact-form .form-row:first-child .form-group {
+  flex: 1 1 0;
+  min-width: 0;
+}
+.contact-form .form-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+}
+.contact-form input,
+.contact-form textarea {
+  font-size: 1rem;
+  padding: 0.5em;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  background: #fff;
+  margin-top: 0.2em;
+  font-family: inherit;
+  width: 100%;
+  box-sizing: border-box;
+}
+.contact-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+.contact-form button {
+  margin-top: 0.7em;
+  padding: 0.45em 1.5em;
+  font-size: 1em;
+  border-radius: 2px;
+  background: #e0e0e0;
+  border: 2px solid #bdbdbd;
+  box-shadow: 1px 1px 0 #fff, 2px 2px 0 #bdbdbd;
+  color: #222;
+  font-family: inherit;
+  cursor: pointer;
+  outline: none;
+  transition: background 0.1s, box-shadow 0.1s;
+}
+.contact-form button:active {
+  background: #d0d0d0;
+  box-shadow: 0 0 0 #fff, 1px 1px 0 #bdbdbd;
+}
+.contact-form label {
+  font-size: 0.97em;
+  margin-bottom: 0.1em;
+}
+@media (max-width: 700px) {
+  .contact-form {
+    padding: 1em 0.5em;
+    max-width: 98vw;
+  }
+  .contact-form .form-row {
+    flex-direction: column;
+    gap: 0.5em;
+    width: 100%;
+  }
+}
 /* Small UI tweaks: hover highlight and right-aligned date for Projects list
    Keeps retro, high-contrast aesthetic but subtle. */
 
