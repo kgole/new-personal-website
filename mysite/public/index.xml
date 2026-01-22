@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Welcome to Karteek&#39;s Website on Karteek&#39;s Website</title>
-    <link>http://localhost:50104/new-personal-website/</link>
+    <link>http://localhost:58267/new-personal-website/</link>
     <description>Recent content in Welcome to Karteek&#39;s Website on Karteek&#39;s Website</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 21 Jan 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:50104/new-personal-website/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:58267/new-personal-website/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>First Post</title>
-      <link>http://localhost:50104/new-personal-website/posts/20260121/</link>
+      <link>http://localhost:58267/new-personal-website/posts/20260121/</link>
       <pubDate>Wed, 21 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:50104/new-personal-website/posts/20260121/</guid>
+      <guid>http://localhost:58267/new-personal-website/posts/20260121/</guid>
       <description>&lt;p&gt;Hello — this is the first post on the site.  I&amp;rsquo;m trying to dip my toes into building SSGs using Hugo. This website uses the Chicago7 theme - It is styled after the old Macintosh System7 OS and has monospaced font inspired by the classic Chicago typeface.&lt;/p&gt;&#xA;&lt;p&gt;More to follow..&lt;/p&gt;</description>
     </item>
     <item>
       <title>Personal Website Using Hugo SSG</title>
-      <link>http://localhost:50104/new-personal-website/projects/first-project/</link>
+      <link>http://localhost:58267/new-personal-website/projects/first-project/</link>
       <pubDate>Wed, 21 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:50104/new-personal-website/projects/first-project/</guid>
+      <guid>http://localhost:58267/new-personal-website/projects/first-project/</guid>
       <description>&lt;p&gt;This is the first project page.&lt;/p&gt;&#xA;&lt;p&gt;More to follow..&lt;/p&gt;</description>
     </item>
     <item>
       <title>Contact</title>
-      <link>http://localhost:50104/new-personal-website/contact/</link>
+      <link>http://localhost:58267/new-personal-website/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:50104/new-personal-website/contact/</guid>
+      <guid>http://localhost:58267/new-personal-website/contact/</guid>
       <description>&lt;p&gt;You can reach me at &lt;a href=&#34;mailto:karteekgole1@gmail.com&#34;&gt;karteekgole1@gmail.com&lt;/a&gt; or +1 (682) 554-6890 or +918080615357.&lt;/p&gt;</description>
     </item>
   </channel>
