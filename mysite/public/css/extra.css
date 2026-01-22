@@ -15,14 +15,6 @@
 .projects:hover { /* no card-wide visual changes; keep hover simple */ }
 
 /* Date floated to the right */
-.projects .meta {
-  position: absolute;
-  right: 18px;
-  top: 18px;
-  font-size: 0.9rem;
-  opacity: 0.9;
-  color: var(--pico-muted-color, rgba(0,0,0,0.6));
-}
 
 /* Make title and tags more readable */
 .projects h3 { margin: 6px 0 8px 0; }

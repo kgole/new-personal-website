@@ -11,7 +11,6 @@
 
     {{ range .Paginator.Pages }}
     <section class="projects">
-      <time datetime="{{ .Date.Format "2006-01-02" }}" class="meta">{{ .Date.Format "2006-01-02" }}</time>
       <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
 
       {{ if .Params.technologies }}
