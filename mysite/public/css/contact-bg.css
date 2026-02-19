@@ -1,0 +1,26 @@
+/* Responsive background for contact page */
+body.contact-page-bg {
+  background-color: #181c2b;
+  background-image: url('/bg/contact-bg-dark.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-image 0.3s;
+}
+
+@media (max-width: 800px) {
+  body.contact-page-bg {
+    background-image: url('/bg/contact-bg-portrait-dark.png');
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body.contact-page-bg {
+    background-image: url('/bg/contact-bg-light.png');
+  }
+  @media (max-width: 800px) {
+    body.contact-page-bg {
+      background-image: url('/bg/contact-bg-portrait-light.png');
+    }
+  }
+}

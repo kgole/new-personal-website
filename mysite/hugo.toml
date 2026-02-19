@@ -4,7 +4,7 @@ title = "Karteek's Website"
 theme = 'chicago7'
 
 [permalinks]
-posts = "/posts/:year:month:day"
+posts = "/posts/:year/:month/:day/:slug/"
 
 [markup]
 [markup.highlight]
@@ -44,6 +44,7 @@ author = "Karteek"
 
 [params.social]
 linkedin = "https://www.linkedin.com/in/karteekgole"
+github = "https://github.com/kgole"
 
 [taxonomies]
 tags = "tags"
