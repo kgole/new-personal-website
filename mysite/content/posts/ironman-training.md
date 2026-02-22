@@ -10,6 +10,6 @@ years = [
 ]
 +++
 
-I will be signing up for the Ironman 70.3 event in Wilmington, North Carolina to race in October 2026. I need to figure out a way to finalize my gear first. Find a bike that suits my fat ass and a breathable tri-suit that doesn't feel like a fucking straitjacket.
+I will be signing up for the Ironman 70.3 event in Wilmington, North Carolina to race in October 2026. I need to figure out a way to finalize my gear first. Find a bike that suits me and a breathable tri-suit that doesn't feel like a straitjacket.
 
-Will keep adding shit here as I finalize my regimen and plan. Stay tuned!
+Will keep adding more things here as I finalize my regimen and plan. Stay tuned!
