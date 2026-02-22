@@ -2128,7 +2128,7 @@ progress,
 
 a.button {
   border: 0.1rem solid;
-  box-shadow: 2px 2px 0px black;
+  box-shadow: 2px 2px 0px currentColor;
   padding: 0 0.65rem;
   white-space: nowrap;
   text-decoration: none;

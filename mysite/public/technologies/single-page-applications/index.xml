@@ -13,7 +13,7 @@
       <link>http://localhost:1313/projects/first-project/</link>
       <pubDate>Wed, 21 Jan 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/first-project/</guid>
-      <description>&lt;p&gt;My old personal website looked hella dated so I decided it was time for a revamp. Since most of the shit here is going to be static, I decided to use &lt;a href=&#34;https://www.gohugo.io/&#34;&gt;Hugo&lt;/a&gt;, the world&amp;rsquo;s fastest Static Site Generator.&lt;/p&gt;&#xA;&lt;p&gt;Here&amp;rsquo;s the link to the &lt;a href=&#34;https://github.com/kgole/new-personal-website&#34;&gt;codebase&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;It&amp;rsquo;s still under construction and more details will be added here and also in the ReadMe section as I progress. I will perhaps also add a walkthrough about how to set the Hugo environment up on your own device.&lt;/p&gt;</description>
+      <description>&lt;p&gt;My old personal website looked hella dated so I decided it was time for a revamp. Since most of the stuff here is going to be static, I decided to use &lt;a href=&#34;https://www.gohugo.io/&#34;&gt;Hugo&lt;/a&gt;, the world&amp;rsquo;s fastest Static Site Generator.&lt;/p&gt;&#xA;&lt;p&gt;Here&amp;rsquo;s the link to the &lt;a href=&#34;https://github.com/kgole/new-personal-website&#34;&gt;codebase&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;It&amp;rsquo;s still under construction and more details will be added here and also in the ReadMe section as I progress. I will perhaps also add a walkthrough about how to set the Hugo environment up on your own device.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
