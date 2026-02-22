@@ -12,7 +12,7 @@ years = [
 ]
 +++
 
-My old personal website looked hella dated so I decided it was time for a revamp. Since most of the shit here is going to be static, I decided to use [Hugo](https://www.gohugo.io/), the world's fastest Static Site Generator.
+My old personal website looked hella dated so I decided it was time for a revamp. Since most of the stuff here is going to be static, I decided to use [Hugo](https://www.gohugo.io/), the world's fastest Static Site Generator.
 
 Here's the link to the [codebase](https://github.com/kgole/new-personal-website).
 
